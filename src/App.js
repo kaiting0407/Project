@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Form from "./Form";
 import "./styles/style.css";
+import Animation from "./Animation";
 
 function App() {
   const [forms, setForms] = useState([
@@ -41,6 +42,9 @@ function App() {
 
   return (
     <div className="App">
+      
+    <Animation/>
+
       <Header />
       <main className="Main">
         <h1>Grade Input form</h1>

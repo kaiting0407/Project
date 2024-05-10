@@ -2,7 +2,7 @@ import React from 'react'
 
 function header() {
   return (
-    <header>
+    <header className='Header'>
       <nav>
         <ul>
           <li><a href="">HOME</a></li>
