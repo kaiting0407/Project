@@ -1,17 +1,39 @@
-import React from 'react'
+import React from "react";
 
-function header() {
+function header({ onMenuClick }) {
   return (
-    <header className='Header'>
+    <header className="Header">
       <nav>
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">GRADE</a></li>
-          <li><a href="">Terms Of Service</a></li>
+          <li>
+            <button
+              style={{ backgroundColor: "powderblue", cursor:"pointer",border:0}}
+              onClick={() => onMenuClick("HOME")}
+            >
+              HOME
+            </button>
+          </li>
+          <li>
+            <button
+              style={{ backgroundColor: "powderblue", cursor:"pointer",border:0 }}
+              onClick={() => onMenuClick("GRADE")}
+            >
+              GRADE
+            </button>
+          </li>
+          <li>
+            <button
+              style={{ backgroundColor: "powderblue",  cursor:"pointer",border:0}}
+              onClick={() => onMenuClick("SCW")}
+            >
+              Search City's Weather
+            </button>
+          </li>
+          
         </ul>
       </nav>
     </header>
-  )
+  );
 }
 
-export default header
+export default header;

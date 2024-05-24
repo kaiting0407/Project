@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import './styles/style.css'; // Make sure to import your CSS stylesheet
-import './image.png'
+
 
 function Animation() {
 const animationWrapperRef = useRef(null);
@@ -43,7 +43,7 @@ const animationWrapperRef = useRef(null);
     <section ref={animationWrapperRef} className="animation-wrapper">
       <section className="animation">
         <div className="start" ref={startRef}>
-          <img src=".\image.png" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/image.png`} alt="" />
         </div>
       </section>
       <div className="slider" ref={sliderRef}></div>

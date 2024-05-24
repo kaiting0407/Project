@@ -25,7 +25,7 @@ body {
       margin-top: 10vh;
       height: 80%;
       display: flex;
-      border: 5px solid purple;
+      //border: 5px solid purple;
       justify-content: center; //垂直
       align-items: center;
     }
@@ -40,7 +40,7 @@ body {
     }
     .start {
       width: 100%;
-      border: 5px solid lawngreen;
+      border: 5px solid ;
       height: 0;
       img {
         width: 100%;
@@ -58,6 +58,13 @@ body {
         li {
           padding: 1rem;
           a {
+            font-size: 1.15rem;
+            transition: all 0.3s ease;
+            &:hover {
+              color: yellow;
+            }
+          }
+          button {
             font-size: 1.15rem;
             transition: all 0.3s ease;
             &:hover {

@@ -28,7 +28,6 @@ body section.animation-wrapper section.animation {
   margin-top: 10vh;
   height: 80%;
   display: flex;
-  border: 5px solid purple;
   justify-content: center;
   align-items: center;
 }
@@ -43,7 +42,7 @@ body section.animation-wrapper .slider {
 }
 body section.animation-wrapper .start {
   width: 100%;
-  border: 5px solid lawngreen;
+  border: 5px solid;
   height: 0;
 }
 body section.animation-wrapper .start img {
@@ -66,6 +65,13 @@ body header nav ul li a {
   transition: all 0.3s ease;
 }
 body header nav ul li a:hover {
+  color: yellow;
+}
+body header nav ul li button {
+  font-size: 1.15rem;
+  transition: all 0.3s ease;
+}
+body header nav ul li button:hover {
   color: yellow;
 }
 
